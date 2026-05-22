@@ -81,22 +81,22 @@ This project is based on a practical compatibility finding:
 - USB 数据线连接 LILYGO T-Embed-CC1101
 ## 编译和烧录 / Build and Upload
 1. 克隆或下载项目
-git clone https://github.com/wuchengji2046/volvo-xc60-tpms-t-embed-cc1101.git
+- git clone https://github.com/wuchengji2046/volvo-xc60-tpms-t-embed-cc1101.git
 
 - 进入项目目录：
 
-cd volvo-xc60-tpms-t-embed-cc1101
+- cd volvo-xc60-tpms-t-embed-cc1101
 2. 使用 VS Code 打开项目
 
-在 VS Code 中打开整个项目文件夹，而不是单独打开 main.cpp。
+- 在 VS Code 中打开整个项目文件夹，而不是单独打开 main.cpp。
 
 3. 编译
-pio run
+- pio run
 4. 烧录
-pio run -t upload
+- pio run -t upload
 5. 打开串口监视器
-pio device monitor
-TPMS ID 配置
+- pio device monitor
+- TPMS ID 配置
 
 ## 请在 include/xc60_tpms_config.h 中配置你的 TPMS 传感器 ID。
 
@@ -113,7 +113,7 @@ static constexpr WheelConfig WHEEL_CONFIGS[4] = {
 ```
 
 ## 建议通过实车测试或靠近轮胎接收测试确认每个传感器 ID 与轮位的对应关系。
-- 我是采用RTL-SDR这个USB设备，利用https://github.com/merbanan/rtl_433/测试出的ID。
+- 我是采用RTL-SDR这个USB设备在WINDOWS下测试出的ID。详见https://github.com/merbanan/rtl_433/
 
 显示状态说明 / Display Status
 Status	Meaning
