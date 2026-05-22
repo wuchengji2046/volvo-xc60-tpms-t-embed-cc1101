@@ -76,9 +76,9 @@ This project is based on a practical compatibility finding:
 
 建议使用：
 
-Visual Studio Code
-PlatformIO IDE extension
-USB 数据线连接 LILYGO T-Embed-CC1101
+- Visual Studio Code
+- PlatformIO IDE extension
+- USB 数据线连接 LILYGO T-Embed-CC1101
 ## 编译和烧录 / Build and Upload
 1. 克隆或下载项目
 git clone https://github.com/YOUR_USERNAME/volvo-xc60-tpms-t-embed-cc1101.git
@@ -114,25 +114,25 @@ static constexpr WheelConfig WHEEL_CONFIGS[4] = {
 
 显示状态说明 / Display Status
 Status	Meaning
-WT	Waiting. 正在等待本次启动后的新 TPMS 数据
-OK	Updated. 本次启动后已经收到该轮有效数据
-OD	Old. 数据超过设定时间未更新
-当前验证结果 / Vehicle Test Result
+- WT	Waiting. 正在等待本次启动后的新 TPMS 数据
+- OK	Updated. 本次启动后已经收到该轮有效数据
+- OD	Old. 数据超过设定时间未更新
+- 当前验证结果 / Vehicle Test Result
 
 ## 本项目已完成实车验证：
 
-CC1101 接收链路正常；
-rtl_433_ESP 解码正常；
-Abarth 124 Spider TPMS 解码器可解析当前 Volvo XC60 2012 TPMS 数据；
-四个白名单 ID 均可命中；
-胎压和温度可在 T-Embed-CC1101 的 1.9 寸屏幕上显示；
-断电重启后可显示上次有效缓存值。
-注意事项 / Limitations
-TPMS 传感器不一定在车辆启动后立即发送数据；
-需要行驶或等待一段时间后才可能收到四轮数据；
-不同年份、不同车型、不同 TPMS 传感器可能需要重新确认解码器和 ID；
-当前 UI 针对 LILYGO T-Embed-CC1101 的 320x170 ST7789 屏幕优化；
-本项目不替代原车 TPMS 系统，仅作为独立显示和实验项目。
+- CC1101 接收链路正常；
+- rtl_433_ESP 解码正常；
+- Abarth 124 Spider TPMS 解码器可解析当前 Volvo XC60 2012 TPMS 数据；
+- 四个白名单 ID 均可命中；
+- 胎压和温度可在 T-Embed-CC1101 的 1.9 寸屏幕上显示；
+- 断电重启后可显示上次有效缓存值。
+## 注意事项 / Limitations
+- TPMS 传感器不一定在车辆启动后立即发送数据；
+- 需要行驶或等待一段时间后才可能收到四轮数据；
+- 不同年份、不同车型、不同 TPMS 传感器可能需要重新确认解码器和 ID；
+- 当前 UI 针对 LILYGO T-Embed-CC1101 的 320x170 ST7789 屏幕优化；
+- 本项目不替代原车 TPMS 系统，仅作为独立显示和实验项目。
 ## Credits
 - LILYGO T-Embed-CC1101
 - rtl_433_ESP
