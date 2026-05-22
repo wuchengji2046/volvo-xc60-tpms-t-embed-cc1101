@@ -113,6 +113,7 @@ static constexpr WheelConfig WHEEL_CONFIGS[4] = {
 ```
 
 ## 建议通过实车测试或靠近轮胎接收测试确认每个传感器 ID 与轮位的对应关系。
+- 我是采用RTL-SDR这个USB设备，利用https://github.com/merbanan/rtl_433/测试出的ID。
 
 显示状态说明 / Display Status
 Status	Meaning
