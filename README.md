@@ -115,7 +115,7 @@ static constexpr WheelConfig WHEEL_CONFIGS[4] = {
 ## 建议通过实车测试或靠近轮胎接收测试确认每个传感器 ID 与轮位的对应关系。
 - 我是采用RTL-SDR这个USB设备在WINDOWS下测试出的ID。详见https://github.com/merbanan/rtl_433/
 
-显示状态说明 / Display Status
+## 显示状态说明 / Display Status
 Status	Meaning
 - WT	Waiting. 正在等待本次启动后的新 TPMS 数据
 - OK	Updated. 本次启动后已经收到该轮有效数据
@@ -139,7 +139,6 @@ Status	Meaning
 ## Credits
 - LILYGO T-Embed-CC1101
 - rtl_433_ESP
-- rtl_433 decoder ecosystem
 ## License
 
 This project is released under the MIT License
