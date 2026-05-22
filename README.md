@@ -71,14 +71,14 @@ This project is based on a practical compatibility finding:
 ├─ LICENSE
 └─ .gitignore
 
-开发环境 / Development Environment
+## 开发环境 / Development Environment
 
 建议使用：
 
 Visual Studio Code
 PlatformIO IDE extension
 USB 数据线连接 LILYGO T-Embed-CC1101
-编译和烧录 / Build and Upload
+## 编译和烧录 / Build and Upload
 1. 克隆或下载项目
 git clone https://github.com/YOUR_USERNAME/volvo-xc60-tpms-t-embed-cc1101.git
 
@@ -97,7 +97,7 @@ pio run -t upload
 pio device monitor
 TPMS ID 配置
 
-请在 include/xc60_tpms_config.h 中配置你的 TPMS 传感器 ID。
+## 请在 include/xc60_tpms_config.h 中配置你的 TPMS 传感器 ID。
 
 示例：
 
@@ -109,7 +109,7 @@ static constexpr WheelConfig WHEEL_CONFIGS[4] = {
   {"RR", "your_rr_sensor_id"},
 };
 
-建议通过实车测试或靠近轮胎接收测试确认每个传感器 ID 与轮位的对应关系。
+## 建议通过实车测试或靠近轮胎接收测试确认每个传感器 ID 与轮位的对应关系。
 
 显示状态说明 / Display Status
 Status	Meaning
@@ -118,7 +118,7 @@ OK	Updated. 本次启动后已经收到该轮有效数据
 OD	Old. 数据超过设定时间未更新
 当前验证结果 / Vehicle Test Result
 
-本项目已完成实车验证：
+## 本项目已完成实车验证：
 
 CC1101 接收链路正常；
 rtl_433_ESP 解码正常；
@@ -132,7 +132,7 @@ TPMS 传感器不一定在车辆启动后立即发送数据；
 不同年份、不同车型、不同 TPMS 传感器可能需要重新确认解码器和 ID；
 当前 UI 针对 LILYGO T-Embed-CC1101 的 320x170 ST7789 屏幕优化；
 本项目不替代原车 TPMS 系统，仅作为独立显示和实验项目。
-Credits
+## Credits
 LILYGO T-Embed-CC1101
 rtl_433_ESP
 rtl_433 decoder ecosystem
