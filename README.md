@@ -1,6 +1,6 @@
 # Volvo XC60 TPMS Display with LILYGO T-Embed-CC1101
 
-基于 **LILYGO T-Embed-CC1101 / ESP32-S3 / CC1101 / ST7789 1.9 寸屏幕 / rtl_433_ESP** 的 Volvo XC60 2012 胎压温度数字显示项目。
+Volvo XC60 2012 只要胎压低报警，没有数值显示，本项目是基于 **LILYGO T-Embed-CC1101 / ESP32-S3 / CC1101 / ST7789 1.9 寸屏幕 / rtl_433_ESP** 的 Volvo XC60 2012 胎压温度数字显示项目。
 
 This project builds a standalone TPMS digital display for a 2012 Volvo XC60 using the LILYGO T-Embed-CC1101 board, ESP32-S3, CC1101 RF receiver, ST7789 320x170 display, and rtl_433_ESP.
 
