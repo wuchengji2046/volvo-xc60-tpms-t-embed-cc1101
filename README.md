@@ -81,9 +81,9 @@ This project is based on a practical compatibility finding:
 - USB 数据线连接 LILYGO T-Embed-CC1101
 ## 编译和烧录 / Build and Upload
 1. 克隆或下载项目
-git clone https://github.com/YOUR_USERNAME/volvo-xc60-tpms-t-embed-cc1101.git
+git clone https://github.com/wuchengji2046/volvo-xc60-tpms-t-embed-cc1101.git
 
-进入项目目录：
+- 进入项目目录：
 
 cd volvo-xc60-tpms-t-embed-cc1101
 2. 使用 VS Code 打开项目
@@ -102,6 +102,7 @@ TPMS ID 配置
 
 示例：
 
+```cpp
 // Replace these example IDs with your own TPMS sensor IDs.
 static constexpr WheelConfig WHEEL_CONFIGS[4] = {
   {"LF", "your_lf_sensor_id"},
@@ -109,6 +110,7 @@ static constexpr WheelConfig WHEEL_CONFIGS[4] = {
   {"LR", "your_lr_sensor_id"},
   {"RR", "your_rr_sensor_id"},
 };
+```
 
 ## 建议通过实车测试或靠近轮胎接收测试确认每个传感器 ID 与轮位的对应关系。
 
@@ -130,7 +132,7 @@ Status	Meaning
 ## 注意事项 / Limitations
 - TPMS 传感器不一定在车辆启动后立即发送数据；
 - 需要行驶或等待一段时间后才可能收到四轮数据；
-- 不同年份、不同车型、不同 TPMS 传感器可能需要重新确认解码器和 ID；
+- 不同年份、不同车型、不同 TPMS 传感器需要重新确认解码器和 ID；
 - 当前 UI 针对 LILYGO T-Embed-CC1101 的 320x170 ST7789 屏幕优化；
 - 本项目不替代原车 TPMS 系统，仅作为独立显示和实验项目。
 ## Credits
