@@ -134,9 +134,9 @@ TPMS 传感器不一定在车辆启动后立即发送数据；
 当前 UI 针对 LILYGO T-Embed-CC1101 的 320x170 ST7789 屏幕优化；
 本项目不替代原车 TPMS 系统，仅作为独立显示和实验项目。
 ## Credits
-LILYGO T-Embed-CC1101
-rtl_433_ESP
-rtl_433 decoder ecosystem
-License
+- LILYGO T-Embed-CC1101
+- rtl_433_ESP
+- rtl_433 decoder ecosystem
+## License
 
 This project is released under the MIT License
